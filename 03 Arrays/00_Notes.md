@@ -42,8 +42,6 @@ Only some compiler allows as stack might overflow, May throw runtime error
 
        a[i]   =   i[a]
     *(arr+i)     *(i+arr)
-
-For eg
 ```c++
 int arr[3] = {1, 2, 3};
 cout << arr;    //104
@@ -80,9 +78,9 @@ void func(int arr[], int n)
 }
 
 ```
----
 
-### 2d Arrays
+
+# <center>2d Arrays
 BTS, 2d is stored as 1d only
 
       a[i][j]   =   No(C)*(i+j)
