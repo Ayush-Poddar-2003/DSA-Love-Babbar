@@ -14,8 +14,10 @@ void insertAtBottom(stack<int> &st, int value)
     //store top element and pop
     int topelement = st.top();
     st.pop();
+
     //call fun again with popped stack
     insertAtBottom(st, value);
+    
     //start pushing all popped elements
     st.push(topelement);
 }

@@ -3,8 +3,8 @@ using namespace std;
 
 class Stack{
 public:
-    int size; //stack's size
     int* arr; //dynamic array to be used as stack
+    int size; //stack's size
     int top;  //top index
 
     Stack(int capacity){
@@ -34,13 +34,15 @@ public:
     }
 
     int getSize(){
-        int StackSize = top+1; //as for 1 element top=0
+        int StackSize = top + 1; //as for 1 element top=0
         return StackSize;
     }
 
     bool isEmpty(){
-        if(top==-1) return true;
-        else return false;
+        if(top==-1) 
+            return true;
+        else 
+            return false;
     }
 
     int getTop(){

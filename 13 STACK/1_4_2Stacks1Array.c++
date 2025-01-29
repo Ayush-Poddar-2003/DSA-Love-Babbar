@@ -11,8 +11,8 @@ public:
     Stack(int capacity){
         arr = new int(capacity);
         size = capacity;
-        top1 = -1;
-        top2 = size;
+        top1 = -1; //bottom
+        top2 = size; //top
     }
 
     void push1(int value){

@@ -12,7 +12,7 @@ public:
     }
 };
 
-//Insert at head as push
+//Insert at head = push
 void push(int data, Node* &head){
     if(head == NULL){
         Node* newNode = new Node(data);
@@ -25,7 +25,7 @@ void push(int data, Node* &head){
     }
 }
 
-//Delete first element as pop
+//Delete first element = pop
 void pop(Node* &head){
     if(head == NULL){
         cout << "Empty Stack\n";

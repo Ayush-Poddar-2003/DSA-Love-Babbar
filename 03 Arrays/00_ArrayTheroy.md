@@ -1,7 +1,7 @@
 # ARRAYS
 
-DS that contains similar type of data  
-Values are stored in contiguous memory location
+DS that contains similar type of data.  
+Values are stored in contiguous memory location.
 
 PROS : Easy Traversal, Searching, Homogenous elements  
 CONS : Insertion, Deletion, Inflexible
@@ -9,13 +9,11 @@ CONS : Insertion, Deletion, Inflexible
 ```c++
 int arr[5];  // [][][][][] will be created
 ```
----
-### Behind the scenes :-  
+
+Behind the scenes :-  
 A memory is given name arr ❌  
 A **Symbol table** stores name and address it points to
 
----
-### Initialization and Declaration
 ```c++
 int arr[ ]; //Error
 int arr[5]; //Garbage
@@ -32,7 +30,8 @@ int n;
 cin >> n;
 int arr[n]; 
 ```
-Only some compiler allows as stack might overflow, May throw runtime error
+Only some compiler allows as stack might overflow  
+May throw runtime error
 
 ---
 
@@ -42,19 +41,19 @@ Only some compiler allows as stack might overflow, May throw runtime error
 
        a[i]   =   i[a]
     *(arr+i)     *(i+arr)
+---
 ```c++
 int arr[3] = {1, 2, 3};
-cout << arr;    //104
 
+cout << arr;    //104
 cout << arr[0]; //104 => 104 + 4*0
 //Hence indexing starts from 0
-
 cout << arr[1]; //108 => 104 + 4*1
 cout << arr[2]; //112 => 104 + 4*2
 cout << arr[3]; //116 => 104 + 4*3
 ```
 ---
-### Size vs No of Elements
+**Size vs No of Elements**
 ```c++
 int arr[5] = {1,2,3};
 
@@ -97,9 +96,20 @@ int arr[2][3] =
 int arr[2][3] = {1,2,3,4,5,6}
 ```
 
-## STORAGE - 
-
-### Row Major
-### Col Major
+### STORAGE - 
+Row Major  
+Col Major
 
 ---
+### 2d Array with vectors
+```c++
+vector<vector<int>> arr(4, vector<int>(3,0))
+/*      [0][0][0]
+        [0][0][0]
+        [0][0][0]
+        [0][0][0]
+*/
+
+arr.size(); //Total rows
+arr[0].size(); //Total cols
+```

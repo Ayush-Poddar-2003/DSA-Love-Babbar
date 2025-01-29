@@ -79,16 +79,38 @@ void SwapMethods(int a, int b){
     */
 }
 
+void MoveNegLeft(int arr[], int n){
+    int i = 0;
+    int j = n-1;
+
+    while(i<j)
+    {
+        if(arr[i]<0)
+            i++;
+
+        else if(arr[j]>0)
+            j--;
+
+        if(arr[j]<0 && arr[i]>0){
+            swap(arr[i], arr[j]);
+        }
+    }
+
+    for(int i=0;i<n;i++){
+        cout << arr[i] << " ";
+    }
+}
+
+
 int main(){
 
-    int arr[6] = {9,5,4,2,1,8};
+    int arr[6] = {9,-5,4,-2,1,8};
     int n = 6;
 
     // LinearSearch(arr, n, 5);
     // FindMaximum(arr,n);
     // ExtremePrinting(arr, n);
     // ReverseArray(arr, n);
-
     // SwapMethods(6,9); //IMPORTANT
 
     return 0;

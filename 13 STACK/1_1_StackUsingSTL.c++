@@ -1,11 +1,11 @@
 #include<iostream>
-#include<stack>
+#include<stack> //header file
 
 using namespace std;
 
 int main()
 {
-    stack<int> st;
+    stack<int> st; //Syntax
 
     st.push(10);
     cout << st.top() << endl;
