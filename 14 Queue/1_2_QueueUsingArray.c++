@@ -7,7 +7,7 @@ class Queue
 
 public:
     Queue(int size){
-        arr = new int[size]{0};
+        arr = new int[size]{0}; //To initialize with 0
         n = size;
         front = -1;
         rear = -1;
