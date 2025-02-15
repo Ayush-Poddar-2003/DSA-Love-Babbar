@@ -72,14 +72,14 @@ int main()
 
     // cout << "Root value " << root->data;
 
-    // cout << "\nPreOrderTraversal : " << endl ;
-    // preOrderTraversal(root);
+    cout << "\nPreOrderTraversal : " << endl ;
+    preOrderTraversal(root);
 
     cout << "\nInOrderTraversal : " << endl ;
     inOrderTraversal(root);
 
-    // cout << "\nPostOrderTraversal : " << endl ;
-    // postOrderTraversal(root);
+    cout << "\nPostOrderTraversal : " << endl ;
+    postOrderTraversal(root);
 
     return 0;
 }

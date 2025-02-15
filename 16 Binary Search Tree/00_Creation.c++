@@ -34,7 +34,8 @@ Node* buildBST(int val, Node* root)
     }
     return root;
 }
- 
+
+//1
 void createTree(Node* &root)
 {
     cout << "Enter the value for Node : ";
