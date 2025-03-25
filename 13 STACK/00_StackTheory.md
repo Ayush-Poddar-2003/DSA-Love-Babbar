@@ -5,6 +5,7 @@
 - Insertion and Deletion from one end  
 - Can access elements only via top pointer  
 
+---
 ### IMPLEMENTATION -  
 1. [Using STL]()  
 2. [Using Arrays]()

@@ -7,6 +7,7 @@ If 1000 elements,
 Linear Search => 1000 Comparisons vs  
 Binary Search => 10 Comparisons
 
+---
 
 ### Binary Search -
 - Array must be sorted (Monotonic)  

@@ -5,6 +5,8 @@ pair<int, int> p;
 
 // Initialize
 pair<int, int> p = make_pair(10,20);
+// OR
+pair<int, int> p(10, 20);
 
 //Access 
 p.first = 100;

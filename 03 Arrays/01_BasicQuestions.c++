@@ -101,7 +101,6 @@ void MoveNegLeft(int arr[], int n){
     }
 }
 
-
 int main(){
 
     int arr[6] = {9,-5,4,-2,1,8};
