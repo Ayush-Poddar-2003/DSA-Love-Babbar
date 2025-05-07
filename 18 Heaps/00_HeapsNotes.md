@@ -1,13 +1,23 @@
 # Lecture 1
-Heap : Complete Binary Tree + Satisy heap property
+### What is Heap ?
+Complete Binary Tree + Satisfies heap property.
 
 **COMPLETE BT?**  
--> Leaf Node only a last level  
--> Nodes filled from left to right
+All levels are completely filled, except last node.  
+Nodes are filled from left to right.
 
 **HEAP PROPERTY?**  
--> Min Heap : parent < left and right  
--> Max Heap : parent > left and right
+1. **Min Heap Property** : Left > Parent, Parent < Right  
+2. **Max Heap Property** : Left < Parent, Parent > Right  
+In terms of value
 
 ---
 
+### Implementation ?  
+Heaps are visualised using Trees &  
+Implemented using Array, with 1 based indexing
+
+![alt text](image.png)
+
+           Parent = i
+    Left = 2*i  Right = 2*i+1
