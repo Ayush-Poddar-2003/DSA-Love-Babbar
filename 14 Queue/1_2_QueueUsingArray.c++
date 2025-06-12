@@ -1,3 +1,5 @@
+//Just a simple array, with front and rear pointers
+
 #include<iostream>
 using namespace std;
 
@@ -13,10 +15,13 @@ public:
         rear = -1;
     }
 
-    void push(int val){
-        if(rear==n-1)
+    //push operations
+    void push(int val)
+    {
+        if(rear == n-1) //size full
             cout << "Overflow\n";
-        else if(rear==-1&&front==-1){
+        else if(rear==-1 && front==-1) //empty
+        {
             rear++;
             arr[rear] = val;
             front++;
@@ -27,10 +32,13 @@ public:
         }
     }
 
-    void pop(){
-        if(front==-1 && rear==-1)
+    //pop operations
+    void pop()
+    {
+        if(front==-1 && rear==-1) //empty
             cout << "UnderFlow\n";
-        else if(front==rear){
+        else if(front == rear) //single element
+        {
             arr[front] = 0;
             front = -1;
             rear = -1;

@@ -17,10 +17,9 @@ public:
     void push(int val)
     {
         // case1: OverFlow
-        if ((front == 0 && rear == n - 1) || (rear == front - 1))
-        {
+        if ((front == 0 && rear == n-1) || (rear == front-1))
             cout << "overflow" << endl;
-        }
+        
         // case2: First element
         else if (front == -1 && rear == -1)
         {
@@ -29,11 +28,12 @@ public:
             arr[rear] = val;
         }
         // case3 : Refilling, circular nature
-        else if (rear == n - 1 && front != 0)
+        else if (rear == n-1 && front != 0)
         {
             rear = 0;
             arr[rear] = val;
         }
+
         else
         {
             rear++;
@@ -45,9 +45,8 @@ public:
     {
         // case1: UnderFlow
         if (front == -1 && rear == -1)
-        {
             cout << "Underflow" << endl;
-        }
+
         // case2: single element
         else if (front == rear)
         {

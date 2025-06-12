@@ -4,10 +4,11 @@ using namespace std;
 class Deque
 {
     int *arr, front, rear, n;
+    
 public:
     Deque(int size){
-        this->n = size;
         arr =  new int[size]{0};
+        this->n = size;
         front = -1;
         rear = -1;
     }
