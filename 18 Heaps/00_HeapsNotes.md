@@ -1,23 +1,32 @@
-# Lecture 1
-### What is Heap ?
-Complete Binary Tree + Satisfies heap property.
+# HEAPS
 
-**COMPLETE BT?**  
-All levels are completely filled, except last node.  
-Nodes are filled from left to right.
-
-**HEAP PROPERTY?**  
-1. **Min Heap Property** : Left > Parent, Parent < Right  
-2. **Max Heap Property** : Left < Parent, Parent > Right  
-In terms of value
+**WHAT ?**  
+CBT + Follows Heap Order property
 
 ---
+**COMPLETE BINARY TREE ?**  
+Every Level filled apart from last  
+Nodes get filled from left
 
-### Implementation ?  
-Heaps are visualised using Trees &  
-Implemented using Array, with 1 based indexing
+**HEAP ORDER PROPERTY ?**
+1. Max Heap  
+Child node < Parent Node 
+2. Min Heap  
+Child node > Parent Node
 
-![alt text](image.png)
+---
+![alt text](image-1.png)  
+![alt text](image-2.png)
 
-           Parent = i
-    Left = 2*i  Right = 2*i+1
+If node -> `i`th index,  
+Left Child -> `2*i`th index  
+Right Child -> `2*i + 1` th index
+
+---
+### INSERTION -  
+Ques : Insert 55 in the tree
+1. Insert at the end  
+![alt text](image-3.png) ![alt text](image-4.png)
+2. Compare with parent, using i/2 and swap accordingly  
+![alt text](image-5.png)
+

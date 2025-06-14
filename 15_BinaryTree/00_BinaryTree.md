@@ -5,7 +5,7 @@ One node connected with multiple nodes
 
 ---
 **BASIC TERMS**
-- Node
+- Node for Binary Tree
   ```c++
   Class Node{
     int data;
@@ -14,15 +14,16 @@ One node connected with multiple nodes
   }
   ```
 - Root Node : Starting parent
-- Parent Child Node
+- Parent & Child Node
 - Siblings : At Same Level
 - Ancestors : Parent's Parent's Parent's...
 - Descendants : Child's child's child...
 - Leaf : No Child
 
 ---
-[Create Tree]()  
-[Traversal Tree]()  
+[Creation Tree]()  
+[Level Order Traversal Tree]()  
+[Count Leaf Nodes]()  
 [LC 104 Max Depth Tree]()  
 [LC 543 Diameter of binary tree]()  
 
