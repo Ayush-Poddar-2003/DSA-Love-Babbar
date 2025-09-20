@@ -12,7 +12,7 @@
 ---
 
 ### Questions -
-* [2 Stack 1 Array](/13%20STACK/1_4_2Stacks1Array.c++) ✅
+* [2 Stack 1 Array]() ✅
 * [Reverse a string](/13%20STACK/1_5_StringReverse.c++) ✅ 
 * [Insert At Bottom](/13%20STACK/1_6_InsertAtBottom.c++) ✅
 <br><br><br>

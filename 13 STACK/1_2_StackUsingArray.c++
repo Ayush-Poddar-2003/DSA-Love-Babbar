@@ -5,53 +5,53 @@ class Stack{
 public:
     int* arr; //dynamic array to be used as stack
     int size; //stack's size
-    int top;  //top index
+    int topInd;  //top index
 
     Stack(int capacity){
         arr = new int[capacity]; //dynamic array
         size = capacity;
-        top = -1;
+        topInd = -1;
     }
 
     //push operation
     void push(int value){
-        if(top == size-1)
+        if(topInd == size-1)
             cout << "Stack Overflow\n";
         else{
-            top++;
-            arr[top] = value;
+            topInd++;
+            arr[topInd] = value;
         }
     }
 
     void pop(){
-        if(top==-1){
+        if(topInd==-1){
             cout << "Stack UnderFlow\n";
         }
         else{
-            arr[top] = -1; //just for visualization
-            top--;
+            arr[topInd] = -1; //just for visualization
+            topInd--;
         }
     }
 
     int getSize(){
-        int StackSize = top + 1; //as for 1 element top=0
+        int StackSize = topInd + 1; //as for 1 element topInd=0
         return StackSize;
     }
 
     bool isEmpty(){
-        if(top==-1) 
+        if(topInd==-1) 
             return true;
         else 
             return false;
     }
 
-    int getTop(){
-        if(top==-1){
+    int gettopInd(){
+        if(topInd==-1){
             cout << "No element in stack\n";
             return -1;
         }
         else{
-            return arr[top];
+            return arr[topInd];
         }
     }
 
@@ -80,7 +80,7 @@ int main(){
 
     st.push(60);
 
-    cout << st.getTop() << endl;
+    cout << st.gettopInd() << endl;
     cout << st.getSize() << endl;
     cout << st.isEmpty() << endl;
 

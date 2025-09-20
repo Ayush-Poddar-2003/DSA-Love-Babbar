@@ -1,4 +1,4 @@
-# C++ DataTypes
+# Introduction
 
 ## 1. INT
 

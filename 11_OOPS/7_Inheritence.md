@@ -1,0 +1,16 @@
+# INHERITNCE
+SINGLE
+
+MUTLIPLE
+
+MULTILEVEL
+
+HIERARCHIAL
+
+
+HYBRID
+
+
+INHERITANCE AMBIGUITY
+Scope resolution operator
+obj.A::func();

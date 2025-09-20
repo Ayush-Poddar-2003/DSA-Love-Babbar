@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+// this will create a single node with val and null ptr
 class Node{
 public:
     int data;
@@ -10,7 +11,6 @@ public:
         this->data = val;
         this->next = NULL;
     }
-    //this will create a single node with val and null ptr
 };
 
 class List{

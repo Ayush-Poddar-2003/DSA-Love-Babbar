@@ -1,13 +1,8 @@
-# <center> Lecture 1 ✅
-What ?  
-When a function calls itself directly or indirectly.
+# <center> RECURSION
+What? When a function calls itself directly or indirectly.
 
-When?  
-When bigger problem is dependant on smaller
-
-How?  
-We will solve 1 rest recursion will handle
-
+![alt text](image.png)
+![alt text](image-1.png)
 ---
 Components
 1. Base Case : When to stop? **!! Mandatory**
